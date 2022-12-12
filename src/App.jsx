@@ -27,6 +27,12 @@ export const App = () => {
               </a>
             </li>
             <li>Componentes separados (Header, List y Character)</li>
+            <li>
+              Repo:{" "}
+              <a href="https://github.com/jrg09/rickmorty" target="_blank">
+                https://github.com/jrg09/rickmorty
+              </a>
+            </li>
           </ul>
           <List />
         </div>
