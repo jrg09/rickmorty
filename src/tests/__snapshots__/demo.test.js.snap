@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`datosDescribe should hacer match con snapshot 1`] = `
+<div>
+  <div
+    class="container p-2"
+  >
+    <div
+      class="navbar sticky-top navbar navbar-light bg-dark nav"
+    >
+      <h1
+        class="navbar-brand text-light p-2"
+      >
+        Rick and Morty API
+      </h1>
+    </div>
+    <div
+      class="p-2"
+    >
+      <p>
+        Este proyecto hace uso de:
+      </p>
+      <ul>
+        <li>
+          API de Rick and Morty (
+          <a
+            href="https://rickandmortyapi.com/api/character"
+            target="_blank"
+          >
+            https://rickandmortyapi.com/api/character
+          </a>
+          )
+        </li>
+        <li>
+          Bootstrap y 
+          <a
+            href="https://react-bootstrap.github.io/getting-started/introduction"
+          >
+            React-Bootstrap
+          </a>
+        </li>
+        <li>
+          Componentes separados (Header, List y Character)
+        </li>
+      </ul>
+      <div
+        class="row mt-3"
+      >
+        <div>
+          Cargando...
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

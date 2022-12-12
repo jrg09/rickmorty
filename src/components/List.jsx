@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getRickMortyCharactersAPI } from "../api/rmApi";
 import { Character } from "./Character";
 
 export const List = () => {
@@ -6,14 +7,14 @@ export const List = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const data = await fetch("https://rickandmortyapi.com/api/character");
-      const { results } = await data.json();
-      setCharacters(results);
-      setIsLoading(false);
-    };
+    getRickMortyCharactersAPI()
+      .then((resp) => {
+        setCharacters(resp.results);
+        setIsLoading(false);
+      })
+      .catch((err) => console.log);
 
-    fetchData();
+    //fetchData();
   }, [characters.length]);
 
   return (
